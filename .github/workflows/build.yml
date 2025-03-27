@@ -25,7 +25,8 @@ jobs:
           ./gradlew build
 
       - name: Upload JAR Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated from v3 to v4
         with:
           name: JavaUpdaterPlugin
           path: build/libs/*.jar
+
