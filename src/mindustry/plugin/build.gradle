@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "io.anuke.mindustry:mindustry:126"
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'mindustry.plugin.JavaUpdaterPlugin'
+    }
+}
